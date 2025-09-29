@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-white w-full flex justify-center">
       {/* Desktop Layout */}
-      <div className="hidden xl:flex w-full max-w-[1600px] h-auto min-h-[456px] flex-col gap-[80px] xl:pt-[60px] xl:pr-[60px] xl:pb-[40px] xl:pl-[60px] 2xl:pt-[120px] 2xl:pr-[120px] 2xl:pb-[60px] 2xl:pl-[120px]">
+      <div className="hidden xl:flex w-full max-w-[1600px] h-auto min-h-[456px] flex-col gap-[80px] xl:pt-[60px] xl:pr-[60px] xl:pb-[40px] xl:pl-[60px] 2xl:pt-[120px] 2xl:pr-[120px] 2xl:pb-[60px] 2xl:pl-[120px] justify-center items-center">
         {/* Main Footer Content Cards */}
         <div className="flex items-start w-full max-w-[1360px] h-auto xl:gap-[80px] 2xl:gap-[120px] flex-wrap xl:flex-nowrap px-4">
           {/* Business Logo & Social Icons */}
