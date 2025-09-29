@@ -88,10 +88,10 @@ const Footer = () => {
             {/* Bottom Footer - Small Device */}
             <div className="pt-[16px] border-t border-gray-200">
               <div className="w-full max-w-[358px] h-[40px] gap-[8px] flex flex-col justify-center items-center mx-auto opacity-100">
-                <p className="text-[12px] font-normal font-inter text-[#6B7280] leading-[16px] text-center">
+                <p className="text-[12px] font-normal font-inter text-[#2A2F32] leading-[16px] text-center">
                   © Plumbing Pros. All Rights Reserved
                 </p>
-                <p className="text-[12px] font-normal font-inter text-[#6B7280] leading-[16px] text-center">
+                <p className="text-[12px] font-normal font-inter text-[#2A2F32] leading-[16px] text-center">
                   Website by IH Adventure And Creative
                 </p>
               </div>
@@ -187,10 +187,10 @@ const Footer = () => {
             {/* Bottom Footer - Medium Device */}
             <div className="pt-[24px] border-t border-gray-200">
               <div className="w-full max-w-[688px] h-[20px] flex justify-between items-center mx-auto opacity-100">
-                <p className="text-[14px] font-normal font-inter text-[#6B7280] leading-[20px]">
+                <p className="text-[14px] font-normal font-inter text-[#2A2F32] leading-[20px]">
                   © Plumbing Pros. All Rights Reserved
                 </p>
-                <p className="text-[14px] font-normal font-inter text-[#6B7280] leading-[20px]">
+                <p className="text-[14px] font-normal font-inter text-[#2A2F32] leading-[20px]">
                   Website by IH Adventure And Creative
                 </p>
               </div>
@@ -353,10 +353,10 @@ const Footer = () => {
             {/* Bottom Footer - Large Device */}
             <div className="flex items-center justify-center w-full max-w-[1360px] mx-auto h-[20px] opacity-100">
               <div className="w-full max-w-[1360px] h-[20px] flex justify-between items-center">
-                <p className="text-[14px] font-normal font-inter text-[#6B7280] leading-[20px] tracking-[0%]">
+                <p className="text-[14px] font-normal font-inter text-[#2A2F32] leading-[20px] tracking-[0%]">
                   © Plumbing Pros. All Rights Reserved
                 </p>
-                <p className="text-[14px] font-normal font-inter text-[#6B7280] leading-[20px] tracking-[0%]">
+                <p className="text-[14px] font-normal font-inter text-[#2A2F32] leading-[20px] tracking-[0%]">
                   Website by IH Adventure And Creative
                 </p>
               </div>
