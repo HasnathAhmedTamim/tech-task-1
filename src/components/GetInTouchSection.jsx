@@ -41,16 +41,16 @@ const GetInTouchSection = () => {
 
       {/* Desktop Layout */}
       <div className="hidden xl:flex w-full max-w-[1600px] h-[644px] gap-[120px] xl:p-[60px] 2xl:p-[120px] mx-auto flex-col justify-center items-center bg-white">
-        <div className="w-full max-w-[1360px] h-[404px] gap-[32px] xl:p-[60px] 2xl:p-[80px] rounded-[24px] bg-[#0058FF] flex flex-col justify-center items-center text-center">
-          <h2 className="w-full max-w-[1200px] h-[58px] text-[48px] font-bold text-white font-inter leading-[100%] tracking-[-0.03em] text-center px-4">
+        <div className="w-full max-w-[1360px] h-[404px] gap-[32px] p-[80px] rounded-[24px] bg-[#0058FF] flex flex-col justify-center items-center text-center">
+          <h2 className="w-full max-w-[1200px] h-[58px] text-[48px] font-bold text-white font-inter leading-[100%] tracking-[-0.03em] text-center">
             Get In Touch
           </h2>
           
-          <p className="w-full max-w-[1000px] h-auto min-h-[60px] text-[18px] font-normal text-white font-inter leading-[30px] tracking-[0%] text-center px-4">
+          <p className="w-full max-w-[1000px] h-auto min-h-[60px] text-[18px] font-normal text-white font-inter leading-[30px] tracking-[0%] text-center">
             Contact us now to enquire our plumbing services, whether you have a commercial project that requires support, or a domestic plumbing task that needs the attention of a trusted professional.
           </p>
           
-          <button className="inline-flex items-center bg-white hover:bg-blue-50 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 w-auto max-w-[299px] min-w-[280px] h-[62px] px-[24px] py-[10px] rounded-[8px] gap-[8px] text-[16px] font-bold text-[#0058FF] font-inter leading-[30px] tracking-[-0.01em]">
+          <button className="inline-flex items-center bg-white hover:bg-blue-50 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 w-[299px] h-[62px] px-[24px] py-[10px] rounded-[8px] gap-[8px] text-[16px] font-bold text-[#0058FF] font-inter leading-[30px] tracking-[-0.01em]">
             Book a Professional Plumber
             <img src={arrowRight} alt="Arrow right" className="w-4 h-4" />
           </button>

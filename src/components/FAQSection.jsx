@@ -122,13 +122,13 @@ const FAQSection = () => {
 
       {/* Desktop Layout */}
       <div className="hidden xl:flex w-full max-w-[1600px] h-auto min-h-[850px] gap-[120px] xl:p-[60px] 2xl:p-[120px] mx-auto flex-col justify-center items-center bg-white">
-        <h2 className="text-[48px] font-bold text-center text-[#1B1743] font-inter lg:leading-[48px] tracking-[-0.03em] w-full max-w-[1360px] mx-auto px-4">
+        <h2 className="text-[48px] font-bold text-center text-[#1B1743] font-inter lg:leading-[48px] tracking-[-0.03em] w-full max-w-[1360px] h-[58px] mx-auto px-4">
           Frequently asked questions
         </h2>
         
-        <div className="w-full max-w-[1360px] gap-[32px] flex flex-col mx-auto px-4">
+        <div className="w-full max-w-[920px] h-auto min-h-[432px] gap-[40px] flex flex-col mx-auto px-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="w-full gap-[40px] flex flex-col border-b border-gray-200 last:border-b-0 pb-8">
+            <div key={index} className="w-full max-w-[920px] h-auto min-h-[120px] gap-[40px] flex flex-col border-b border-gray-200 last:border-b-0 pb-8">
               <button
                 className="w-full flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200 px-0"
                 onClick={() => setOpenFaq(openFaq === index ? -1 : index)}

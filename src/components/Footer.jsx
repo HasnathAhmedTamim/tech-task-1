@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <footer className="bg-white w-full flex justify-center">
       {/* Desktop Layout */}
-      <div className="hidden xl:flex w-full max-w-[1600px] h-auto min-h-[456px] flex-col gap-[80px] xl:pt-[60px] xl:pr-[60px] xl:pb-[40px] xl:pl-[60px] 2xl:pt-[120px] 2xl:pr-[120px] 2xl:pb-[60px] 2xl:pl-[120px] justify-center items-center">
+      <div className="hidden xl:flex w-full max-w-[1600px] h-[456px] flex-col gap-[80px] pt-[120px] pr-[120px] pb-[60px] pl-[120px] justify-center items-center">
         {/* Main Footer Content Cards */}
-        <div className="flex items-start w-full max-w-[1360px] h-auto xl:gap-[80px] 2xl:gap-[120px] flex-wrap xl:flex-nowrap px-4">
+        <div className="flex items-start w-[1360px] h-[176px] gap-[120px] flex-wrap xl:flex-nowrap">
           {/* Business Logo & Social Icons */}
-          <div className="flex flex-col w-full max-w-[260px] h-auto gap-[28px]">
+          <div className="flex flex-col w-[260px] h-[91px] gap-[28px]">
             <h2 className="text-[32px] font-bold font-inter text-black leading-[100%] tracking-[-0.03em]">
               Business Logo
             </h2>
@@ -37,9 +37,9 @@ const Footer = () => {
           </div>
 
           {/* Our Services and Useful Links Container */}
-          <div className="flex w-full max-w-[430px] h-auto gap-[80px] items-start flex-wrap sm:flex-nowrap">
+          <div className="flex w-[430px] h-[176px] gap-[80px] items-start flex-wrap sm:flex-nowrap">
             {/* Our Services */}
-            <div className="flex flex-col w-full max-w-[88px] h-auto gap-[24px]">
+            <div className="flex flex-col w-[79px] h-[128px] gap-[16px]">
               <h3 className="text-[14px] font-semibold font-inter text-[#2A2F32] leading-[24px] tracking-[0%]">
                 Our Services
               </h3>
@@ -73,7 +73,7 @@ const Footer = () => {
                 Useful Links
               </h3>
               <div className="flex gap-[20px] items-start flex-wrap sm:flex-nowrap">
-                <div className="flex flex-col w-full max-w-[75px] h-auto gap-[16px]">
+                <div className="flex flex-col w-[75px] h-[128px] gap-[16px]">
                   <ul className="flex flex-col gap-3">
                     <li>
                       <a href="#" className="text-[14px] font-normal font-inter text-[#2A2F32] leading-[20px] tracking-[0%] hover:opacity-75 transition-opacity whitespace-nowrap">
@@ -97,7 +97,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="flex flex-col w-full max-w-[126px] h-auto gap-[16px]">
+                <div className="flex flex-col w-[126px] h-[128px] gap-[16px]">
                   <ul className="flex flex-col gap-3">
                     <li>
                       <a href="#" className="text-[14px] font-normal font-inter text-[#2A2F32] leading-[20px] tracking-[0%] hover:opacity-75 transition-opacity whitespace-nowrap">
@@ -126,11 +126,11 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col w-full max-w-[430px] h-auto gap-[24px]">
+          <div className="flex flex-col w-[430px] h-[160px] gap-[24px]">
             <h3 className="text-[14px] font-semibold font-inter text-[#2A2F32] leading-[24px] tracking-[0%]">
               Contact Info
             </h3>
-            <div className="space-y-4">
+            <div className="flex flex-col w-[246px] h-[112px] gap-[20px]">
               {/* Address */}
               <div className="flex items-start w-[246px] h-[24px] gap-[12px]">
                 <img src={mapPin} alt="Location" className="w-6 h-6 mt-1" />
