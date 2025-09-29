@@ -25,14 +25,14 @@ const FAQSection = () => {
   return (
     <>
       {/* Mobile Layout */}
-      <div className="block md:hidden w-[390px] h-[448px] mx-auto py-[120px] px-4 bg-white">
-        <h2 className="text-[24px] font-bold text-center text-[#1B1743] mb-[120px] font-inter leading-[32px] tracking-[-0.03em]">
+      <div className="block md:hidden w-full max-w-[390px] h-auto min-h-[448px] mx-auto py-[60px] px-4 bg-white">
+        <h2 className="text-[24px] font-bold text-center text-[#1B1743] mb-[40px] font-inter leading-[32px] tracking-[-0.03em]">
           Frequently asked questions
         </h2>
         
-        <div className="w-[358px] h-[288px] gap-[16px] flex flex-col mx-auto">
+        <div className="w-full max-w-[358px] gap-[16px] flex flex-col mx-auto">
           {faqs.map((faq, index) => (
-            <div key={index} className="w-[358px] h-[96px] gap-[28px] flex flex-col border-b border-gray-200 last:border-b-0">
+            <div key={index} className="w-full gap-[20px] flex flex-col border-b border-gray-200 last:border-b-0 pb-4">
               <button
                 className="w-full flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200 px-0"
                 onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
@@ -72,15 +72,15 @@ const FAQSection = () => {
         </div>
       </div>
 
-      {/* Tablet Layout */}
-      <div className="hidden md:flex lg:hidden w-[768px] h-[488px] gap-[40px] p-[40px] mx-auto flex-col bg-white">
-        <h2 className="text-[32px] font-bold text-center text-[#1B1743] font-inter md:leading-[40px] tracking-[-0.03em] w-[688px] h-[40px] mx-auto">
+      {/* Tablet/Medium Layout - For all medium devices (768px - 1280px) */}
+      <div className="hidden md:flex xl:hidden w-full max-w-[768px] h-auto min-h-[488px] gap-[40px] p-[40px] mx-auto flex-col bg-white">
+        <h2 className="text-[32px] font-bold text-center text-[#1B1743] font-inter md:leading-[40px] tracking-[-0.03em] w-full max-w-[688px] mx-auto">
           Frequently asked questions
         </h2>
         
-        <div className="w-[688px] h-[328px] gap-[24px] flex flex-col mx-auto">
+        <div className="w-full max-w-[688px] gap-[24px] flex flex-col mx-auto">
           {faqs.map((faq, index) => (
-            <div key={index} className="w-[688px] h-[88px] gap-[40px] flex flex-col border-b border-gray-200 last:border-b-0">
+            <div key={index} className="w-full gap-[30px] flex flex-col border-b border-gray-200 last:border-b-0 pb-6">
               <button
                 className="w-full flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200 px-0"
                 onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
@@ -121,14 +121,14 @@ const FAQSection = () => {
       </div>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:flex w-[1600px] h-[850px] gap-[120px] p-[120px] mx-auto flex-col justify-start items-center bg-white">
-        <h2 className="text-[48px] font-bold text-center text-[#1B1743] font-inter lg:leading-[48px] tracking-[-0.03em] w-[1360px] h-[58px] mx-auto">
+      <div className="hidden xl:flex w-full max-w-[1600px] h-auto min-h-[850px] gap-[120px] xl:p-[60px] 2xl:p-[120px] mx-auto flex-col justify-start items-center bg-white">
+        <h2 className="text-[48px] font-bold text-center text-[#1B1743] font-inter lg:leading-[48px] tracking-[-0.03em] w-full max-w-[1360px] mx-auto px-4">
           Frequently asked questions
         </h2>
         
-        <div className="w-[920px] h-[432px] max-w-[920px] gap-[32px] flex flex-col mx-auto">
+        <div className="w-full max-w-[920px] gap-[32px] flex flex-col mx-auto px-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="w-[920px] h-[120px] gap-[40px] flex flex-col border-b border-gray-200 last:border-b-0">
+            <div key={index} className="w-full gap-[40px] flex flex-col border-b border-gray-200 last:border-b-0 pb-8">
               <button
                 className="w-full flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200 px-0"
                 onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
