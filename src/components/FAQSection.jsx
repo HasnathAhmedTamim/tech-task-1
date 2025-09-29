@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import ArrowDown from '../assets/Arrow Down.png'
+import ArrowUp from '../assets/Arrow Up.png'
 
 const FAQSection = () => {
   const [openFaq, setOpenFaq] = useState(0) // Track which FAQ is open (default first one)
@@ -42,21 +44,11 @@ const FAQSection = () => {
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
-                    <svg
-                      className={`w-6 h-6 text-gray-400 transition-transform duration-300 ${
-                        openFaq === index ? 'rotate-180' : 'rotate-0'
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
+                    <img
+                      src={openFaq === index ? ArrowUp : ArrowDown}
+                      alt={openFaq === index ? 'Collapse' : 'Expand'}
+                      className="w-6 h-6 transition-opacity duration-300"
+                    />
                   </div>
                 </button>
                 {openFaq === index && (
@@ -90,21 +82,11 @@ const FAQSection = () => {
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
-                    <svg
-                      className={`w-6 h-6 text-gray-400 transition-transform duration-300 ${
-                        openFaq === index ? 'rotate-180' : 'rotate-0'
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
+                    <img
+                      src={openFaq === index ? ArrowUp : ArrowDown}
+                      alt={openFaq === index ? 'Collapse' : 'Expand'}
+                      className="w-6 h-6 transition-opacity duration-300"
+                    />
                   </div>
                 </button>
                 {openFaq === index && (
@@ -138,21 +120,11 @@ const FAQSection = () => {
                       {faq.question}
                     </h3>
                     <div className="flex-shrink-0">
-                      <svg
-                        className={`w-6 h-6 text-gray-400 transition-transform duration-300 ${
-                          openFaq === index ? 'rotate-180' : 'rotate-0'
-                        }`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
+                      <img
+                        src={openFaq === index ? ArrowUp : ArrowDown}
+                        alt={openFaq === index ? 'Collapse' : 'Expand'}
+                        className="w-6 h-6 transition-opacity duration-300"
+                      />
                     </div>
                   </button>
                   {openFaq === index && (
@@ -186,21 +158,11 @@ const FAQSection = () => {
                       {faq.question}
                     </h3>
                     <div className="flex-shrink-0">
-                      <svg
-                        className={`w-8 h-8 text-gray-400 transition-transform duration-300 ${
-                          openFaq === index ? 'rotate-180' : 'rotate-0'
-                        }`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
+                      <img
+                        src={openFaq === index ? ArrowUp : ArrowDown}
+                        alt={openFaq === index ? 'Collapse' : 'Expand'}
+                        className="w-8 h-8 transition-opacity duration-300"
+                      />
                     </div>
                   </button>
                   {openFaq === index && (
