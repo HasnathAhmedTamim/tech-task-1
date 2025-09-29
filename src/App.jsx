@@ -28,8 +28,22 @@ function App() {
       {/* FAQ Section */}
       <div className="w-full py-[120px] px-4 md:px-[120px] bg-white">
         <div className="max-w-[1360px] mx-auto">
-          <h2 className="text-[48px] font-bold text-center text-custom-dark mb-[120px] font-inter" style={{fontFamily: 'Inter', fontWeight: 700, fontSize: '48px', color: '#1B1743'}}>
-            Frequently asked questions
+          <h2 className="text-[24px] md:text-[32px] lg:text-[48px] font-bold text-center text-custom-dark mb-[120px] font-inter" 
+              style={{
+                fontFamily: 'Inter', 
+                fontWeight: 700, 
+                color: '#1B1743',
+                letterSpacing: '-3%'
+              }}>
+            <span className="block md:hidden" style={{fontSize: '24px', lineHeight: '32px'}}>
+              Frequently asked questions
+            </span>
+            <span className="hidden md:block lg:hidden" style={{fontSize: '32px', lineHeight: '40px'}}>
+              Frequently asked questions
+            </span>
+            <span className="hidden lg:block" style={{fontSize: '48px', lineHeight: '48px'}}>
+              Frequently asked questions
+            </span>
           </h2>
           
           <div className="space-y-0 max-w-4xl mx-auto">
@@ -39,8 +53,22 @@ function App() {
                   className="w-full py-8 flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200 px-0"
                   onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
                 >
-                  <h3 className="text-[28px] font-semibold text-custom-dark pr-4 font-inter" style={{fontFamily: 'Inter', fontWeight: 600, fontSize: '28px', lineHeight: '40px', letterSpacing: '-3%', color: '#1B1743'}}>
-                    {faq.question}
+                  <h3 className="text-[16px] md:text-[20px] lg:text-[28px] font-semibold text-custom-dark pr-4 font-inter" 
+                      style={{
+                        fontFamily: 'Inter', 
+                        fontWeight: 600, 
+                        color: '#1B1743',
+                        letterSpacing: '-3%'
+                      }}>
+                    <span className="block md:hidden" style={{fontSize: '16px', lineHeight: '24px'}}>
+                      {faq.question}
+                    </span>
+                    <span className="hidden md:block lg:hidden" style={{fontSize: '20px', lineHeight: '28px'}}>
+                      {faq.question}
+                    </span>
+                    <span className="hidden lg:block" style={{fontSize: '28px', lineHeight: '40px'}}>
+                      {faq.question}
+                    </span>
                   </h3>
                   <div className="flex-shrink-0">
                     <svg
@@ -65,8 +93,22 @@ function App() {
                     openFaq === index ? 'max-h-96 pb-8' : 'max-h-0 pb-0'
                   }`}
                 >
-                  <p className="text-[18px] font-normal text-custom-gray font-inter" style={{fontFamily: 'Inter', fontWeight: 400, fontSize: '18px', lineHeight: '30px', letterSpacing: '0%', color: '#2A2F32'}}>
-                    {faq.answer}
+                  <p className="text-[14px] md:text-[14px] lg:text-[18px] font-normal text-custom-gray font-inter" 
+                     style={{
+                       fontFamily: 'Inter', 
+                       fontWeight: 400, 
+                       color: '#2A2F32',
+                       letterSpacing: '0%'
+                     }}>
+                    <span className="block md:hidden" style={{fontSize: '14px', lineHeight: '20px'}}>
+                      {faq.answer}
+                    </span>
+                    <span className="hidden md:block lg:hidden" style={{fontSize: '14px', lineHeight: '20px'}}>
+                      {faq.answer}
+                    </span>
+                    <span className="hidden lg:block" style={{fontSize: '18px', lineHeight: '30px'}}>
+                      {faq.answer}
+                    </span>
                   </p>
                 </div>
               </div>
