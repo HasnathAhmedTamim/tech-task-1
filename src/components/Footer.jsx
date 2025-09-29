@@ -8,14 +8,14 @@ import phoneIcon from '../assets/phoneIcon.png'
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white mx-auto">
+    <footer className="bg-white w-full flex justify-center">
       {/* Desktop Layout */}
-      <div className="hidden lg:flex h-[456px] w-full max-w-[1600px] mx-auto flex-col gap-[80px] pt-[120px] px-[120px] pb-[60px]">
+      <div className="hidden lg:flex w-[1600px] h-[456px] flex-col gap-[80px] pt-[120px] pr-[120px] pb-[60px] pl-[120px]">
         {/* Main Footer Content Cards */}
-        <div className="grid grid-cols-4 items-start w-full max-w-[1360px] h-[176px] gap-[120px]">
+        <div className="flex items-start w-[1360px] h-[176px] gap-[120px]">
           {/* Business Logo & Social Icons */}
-          <div className="flex flex-col h-full">
-            <h2 className="text-[32px] font-bold font-inter text-black leading-[100%] tracking-[-0.03em] mb-6">
+          <div className="flex flex-col w-[260px] h-[91px] gap-[28px]">
+            <h2 className="text-[32px] font-bold font-inter text-black leading-[100%] tracking-[-0.03em]">
               Business Logo
             </h2>
             
@@ -36,91 +36,98 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Our Services */}
-          <div className="flex flex-col">
-            <h3 className="text-[14px] font-semibold font-inter text-[#2A2F32] leading-[24px] tracking-[0%] mb-4">
-              Our Services
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter">
-                  Plumbing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter">
-                  Drainage
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter">
-                  Bathrooms
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter">
-                  Commercial
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Useful Links */}
-          <div className="flex flex-col">
-            <h3 className="text-[14px] font-semibold font-inter text-[#2A2F32] leading-[24px] tracking-[0%] mb-4">
-              Useful Links
-            </h3>
-            <div className="grid grid-cols-2 gap-x-12">
+          {/* Our Services and Useful Links Container */}
+          <div className="flex w-[430px] h-[176px] gap-[80px]">
+            {/* Our Services */}
+            <div className="flex flex-col w-[88px] h-[176px] gap-[24px]">
+              <h3 className="text-[14px] font-semibold font-inter text-[#2A2F32] leading-[24px] tracking-[0%]">
+                Our Services
+              </h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
-                    Contact Us
+                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter">
+                    Plumbing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
-                    Updates
+                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter">
+                    Drainage
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
-                    About Us
+                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter">
+                    Bathrooms
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
-                    Rates
-                  </a>
-                </li>
-              </ul>
-              <ul className="space-y-3">
-                <li>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
-                    Customer Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
-                    Updates
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
-                    Locations
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
-                    Sitemap
+                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter">
+                    Commercial
                   </a>
                 </li>
               </ul>
             </div>
+
+            {/* Useful Links */}
+            <div className="flex flex-col gap-[24px]">
+              <h3 className="text-[14px] font-semibold font-inter text-[#2A2F32] leading-[24px] tracking-[0%]">
+                Useful Links
+              </h3>
+              <div className="flex gap-[80px]">
+                <div className="flex flex-col w-[75px] h-[128px] gap-[16px]">
+                  <ul className="space-y-3">
+                    <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
+                        Contact Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
+                        Updates
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
+                        Rates
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col w-[126px] h-[128px] gap-[16px]">
+                  <ul className="space-y-3">
+                    <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
+                        Customer Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
+                        Updates
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
+                        Locations
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors font-inter whitespace-nowrap">
+                        Sitemap
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col">
-            <h3 className="text-[14px] font-semibold font-inter text-[#2A2F32] leading-[24px] tracking-[0%] mb-4">
+          <div className="flex flex-col w-[430px] h-[160px] gap-[24px]">
+            <h3 className="text-[14px] font-semibold font-inter text-[#2A2F32] leading-[24px] tracking-[0%]">
               Contact Info
             </h3>
             <div className="space-y-4">
@@ -152,11 +159,11 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm font-inter">
+        <div className="flex justify-between items-center w-[1360px] h-[20px]">
+          <p className="w-[251px] h-[20px] text-[14px] font-normal font-inter text-[#2A2F32] leading-[20px] tracking-[0%] opacity-50">
             © Plumbing Pros. All Rights Reserved
           </p>
-          <p className="text-gray-500 text-sm font-inter">
+          <p className="w-[254px] h-[20px] text-[14px] font-normal font-inter text-[#2A2F32] leading-[20px] tracking-[0%] opacity-50">
             Website by IH Adventure And Creative
           </p>
         </div>
