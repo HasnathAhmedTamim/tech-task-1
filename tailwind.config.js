@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         'custom-dark': '#1B1743',
+        'custom-gray': '#2A2F32',
       },
       letterSpacing: {
         'tight-custom': '-0.03em',

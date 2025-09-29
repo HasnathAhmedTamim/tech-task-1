@@ -28,7 +28,7 @@ function App() {
       {/* FAQ Section */}
       <div className="w-full py-[120px] px-4 md:px-[120px] bg-white">
         <div className="max-w-[1360px] mx-auto">
-          <h2 className="text-[48px] font-bold leading-[100%] tracking-tight-custom text-center text-custom-dark mb-[120px] font-inter">
+          <h2 className="text-[48px] font-bold text-center text-custom-dark mb-[120px] font-inter" style={{fontFamily: 'Inter', fontWeight: 700, fontSize: '48px', color: '#1B1743'}}>
             Frequently asked questions
           </h2>
           
@@ -39,7 +39,7 @@ function App() {
                   className="w-full py-8 flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200 px-0"
                   onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
                 >
-                  <h3 className="text-xl md:text-2xl font-semibold text-custom-dark pr-4 leading-tight">
+                  <h3 className="text-[28px] font-semibold text-custom-dark pr-4 font-inter" style={{fontFamily: 'Inter', fontWeight: 600, fontSize: '28px', lineHeight: '40px', letterSpacing: '-3%', color: '#1B1743'}}>
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
@@ -65,7 +65,7 @@ function App() {
                     openFaq === index ? 'max-h-96 pb-8' : 'max-h-0 pb-0'
                   }`}
                 >
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className="text-[18px] font-normal text-custom-gray font-inter" style={{fontFamily: 'Inter', fontWeight: 400, fontSize: '18px', lineHeight: '30px', letterSpacing: '0%', color: '#2A2F32'}}>
                     {faq.answer}
                   </p>
                 </div>
